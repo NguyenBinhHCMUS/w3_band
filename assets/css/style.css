@@ -189,6 +189,7 @@ html{
 }
 
 #content .content-section{
+    max-width: 100%;
     width: 800px;
     padding: 64px 0 112px;
     margin-left: auto;
@@ -364,3 +365,4 @@ html{
     color:rgba(0, 0, 0, 0.6);
     text-decoration: underline;
 }
+
