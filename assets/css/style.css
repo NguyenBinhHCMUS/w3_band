@@ -53,6 +53,9 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32 {
+    margin-top: 32px !important;
+}
 .text-center{
     text-align: center;
 }
@@ -67,6 +70,7 @@ html{
     display: inline-block;
     margin-top: 8px;
     border: none;
+    text-align: center;
     /* margin-bottom: 10px; */
 
 }
@@ -84,6 +88,7 @@ html{
     left: 0;
     right: 0;
     z-index: 1;
+    /* overflow: hidden; */
 }
 
 #nav{
@@ -141,15 +146,27 @@ html{
 #nav .nav-arrow-down{
     font-size: 14px;
 }
-
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     padding: 0 21px;
     cursor: pointer; /* Ddoio con tro chuot*/
 }
+
 #header .search-btn:hover{
     background-color: red;
 }
+#header .mobile-menu-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+#header .mobile-menu-icon,
 #header .search-icon{
     color:white;
     line-height: 46px;
@@ -189,11 +206,13 @@ html{
 }
 
 #content .content-section{
-    max-width: 100%;
     width: 800px;
+    max-width: 100%; /*fix tablet*/
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;/*fix tablet*/
+    padding-right: 16px;/*fix tablet*/
 }
 #content .section-heading{
     font-size: 30px;
@@ -221,7 +240,7 @@ html{
 }
 
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
     /* overflow: hidden;bao cac float con cua no */
 }
 
@@ -274,7 +293,7 @@ html{
 
 }
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     /* margin-bottom: 48px; */
     /* padding: 32px 0; */
 
